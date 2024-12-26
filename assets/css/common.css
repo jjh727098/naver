@@ -1,0 +1,67 @@
+/*
+
+공통
+
+*/
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+#skipNav{
+    position: absolute;
+}
+#skipNav a{
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    height: 40px;
+    background: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 20px;
+    top: -50px;
+}
+
+#skipNav a:focus,
+#skipNav a:active{
+    top: 0;
+}
+
+#header .search-area .btn-keyboard::before,
+#header .search-area .btn-auto::before,
+#header .nav-area .icon::before,
+#header .nav-area .icon::after,
+#header .nav-area .ic-service::before,
+#header .util-area [class*="btn-"]::before,
+.sc-news .issue-area .btn-all::after,
+.sc-login .link-login::before,
+.sc-news .group-control .prev::before,
+.sc-news .group-control .next::before,
+.sc-shopping .group-control .prev::before,
+.sc-shopping .group-control .next::before,
+.sc-daily-board .daily-board-link-info::before,
+.daily-board-info-detail .daily-board-weather-ic::before,
+.daily-stock-header-group .daily-stock-header-btn::before,
+.daily-stock-header-group .daily-stock-header-btn-refresh::before,
+.daily-stock-info-area .daily-stock-gap-down .daily-stock-gap-ic,
+.daily-stock-item-link .daily-stock-item-price .daily-stock-item-type-down,
+.daily-stock-item-link .daily-stock-item-price .daily-stock-item-type-up,
+.daily-stock-list .stock-item-more::after,
+.vibe-box .vibe-box-top .right-widget-ic,
+.vibe-box .vibe-box-top .widget-vibe-btn-refresh::after,
+.vibe-box .vibe-box-list .vibe-item .vibe-link-play-ic::before,
+.tool-group-link::before,
+.tool-group-link::after,
+.right-widget-nextbtn::before,
+.notice-group .notice-link::after,
+.view-area .btn-list::before,
+.view-area .btn-thumb::before{
+    background-image: url(../images/sp1.png);
+    background-repeat: no-repeat;
+    background-size: 463px auto;
+}
